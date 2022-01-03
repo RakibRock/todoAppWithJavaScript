@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -21,12 +26,20 @@
       <div class="container">
         <div class="row">
           <div class="col todoTopic">
-            <input
-              class="input"
-              type="text"
-              placeholder="Create a new todo..."
-              id="submit"
-            />
+            <form>
+              <input
+                class="todo-input"
+                type="text"
+                placeholder="Create a new todo..."
+                id="submit"
+              />
+              <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+              </button>
+            </form>
+            <div class="todo-container">
+              <ul class="todo-list"></ul>
+            </div>
           </div>
         </div>
         <div class="row">
