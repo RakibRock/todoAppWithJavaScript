@@ -36,7 +36,18 @@ function addToDo(e) {
 
 function deleteTodo(e) {
   const item = e.target;
+  //When delete btn clicked
   if (item.classList[0] === "delete-btn") {
-    item.parentElement.remove();
+    const todo = item.parentElement;
+    //Animation
+    todo.classList.add("fall");
+    //Wait for the transition to finish then remove
+    todo.addEventListener("transitionend", function () {
+      todo.remove();
+    });
+  }
+  //When completed btn clicked
+  if (item.classList[0] === "completed-btn") {
+    item.parentElement.classList.toggle("checked");
   }
 }
