@@ -31,3 +31,28 @@ form input {
   border-radius: 3px;
   border: none;
 }
+.todo-container {
+  padding-top: 10px;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.todo-item {
+  flex: 1;
+  border-radius: 3px;
+  background-color: rgb(194, 228, 255);
+}
+.completed-btn {
+  background-color: lightgreen;
+}
+.delete-btn {
+  background-color: orangered;
+}
