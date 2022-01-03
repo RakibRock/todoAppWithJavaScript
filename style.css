@@ -56,3 +56,7 @@ form input {
 .delete-btn {
   background-color: orangered;
 }
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
